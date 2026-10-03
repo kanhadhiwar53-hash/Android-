@@ -1,0 +1,12 @@
+<resources>
+    <style name="Theme.Nova" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/nova_primary</item>
+        <item name="colorPrimaryVariant">#6578D8</item>
+        <item name="colorOnPrimary">#10131A</item>
+        <item name="colorSecondary">@color/nova_green</item>
+        <item name="android:windowBackground">@color/nova_bg</item>
+        <item name="android:statusBarColor">@color/nova_bg</item>
+        <item name="android:navigationBarColor">@color/nova_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
