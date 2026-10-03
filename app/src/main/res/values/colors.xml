@@ -1,0 +1,6 @@
+<resources>
+    <color name="nova_bg">#10131A</color><color name="nova_surface">#191E29</color>
+    <color name="nova_panel">#202735</color><color name="nova_primary">#9AA9FF</color>
+    <color name="nova_text">#F1F3FA</color><color name="nova_secondary">#A0A9BB</color>
+    <color name="nova_border">#30394A</color><color name="nova_green">#67D6A1</color>
+</resources>
