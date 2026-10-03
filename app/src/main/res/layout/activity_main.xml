@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/nova_bg">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+        android:gravity="center_vertical" android:paddingHorizontal="12dp" android:background="@color/nova_surface">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="NOVA IDE" android:textSize="20sp" android:textStyle="bold" android:textColor="@color/nova_text"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/buildButton"
+            android:layout_width="wrap_content" android:layout_height="42dp" android:text="BUILD" app:cornerRadius="9dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp"
+        android:gravity="center_vertical" android:paddingHorizontal="10dp" android:background="@color/nova_panel">
+        <TextView android:id="@+id/projectTitle" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="NO PROJECT OPEN" android:textColor="@color/nova_text"/>
+        <TextView android:id="@+id/newProjectButton" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:padding="8dp" android:text="+ NEW" android:textColor="@color/nova_primary"/>
+        <TextView android:id="@+id/openProjectButton" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:padding="8dp" android:text="OPEN" android:textColor="@color/nova_primary"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+        <LinearLayout android:layout_width="112dp" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/nova_surface">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="38dp" android:gravity="center_vertical" android:paddingStart="8dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="FILES" android:textColor="@color/nova_secondary"/>
+                <TextView android:id="@+id/refreshButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="↻" android:textColor="@color/nova_primary"/>
+            </LinearLayout>
+            <ListView android:id="@+id/fileList" android:layout_width="match_parent" android:layout_height="match_parent"
+                android:divider="@color/nova_border" android:dividerHeight="1dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="38dp" android:gravity="center_vertical"
+                android:paddingHorizontal="8dp" android:background="@color/nova_panel">
+                <TextView android:id="@+id/currentFileLabel" android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="No file selected" android:textColor="@color/nova_secondary" android:maxLines="1"/>
+                <TextView android:id="@+id/saveButton" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:padding="8dp" android:text="SAVE" android:textColor="@color/nova_primary"/>
+            </LinearLayout>
+            <EditText android:id="@+id/editorText" android:layout_width="match_parent" android:layout_height="match_parent"
+                android:layout_weight="1" android:gravity="top|start" android:padding="12dp"
+                android:background="@android:color/transparent" android:fontFamily="monospace"
+                android:textColor="@color/nova_text" android:textSize="12sp"
+                android:inputType="textMultiLine|textNoSuggestions"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="142dp" android:orientation="vertical"
+        android:padding="10dp" android:background="@color/nova_surface">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="OUTPUT / BUILD CONSOLE"
+            android:textColor="@color/nova_primary" android:textStyle="bold" android:textSize="11sp"/>
+        <TextView android:id="@+id/consoleText" android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:paddingTop="8dp" android:fontFamily="monospace"
+            android:textColor="@color/nova_green" android:textSize="11sp" android:text="NOVA IDE V0.1 ready."/>
+    </LinearLayout>
+</LinearLayout>
